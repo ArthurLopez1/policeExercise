@@ -12,3 +12,17 @@ C:\Users\arthu\OneDrive\Documentos\VS\OPA - Semester 1\Polis\obj\Debug\net7.0\re
 C:\Users\arthu\OneDrive\Documentos\VS\OPA - Semester 1\Polis\obj\Debug\net7.0\Polis.pdb
 C:\Users\arthu\OneDrive\Documentos\VS\OPA - Semester 1\Polis\obj\Debug\net7.0\Polis.genruntimeconfig.cache
 C:\Users\arthu\OneDrive\Documentos\VS\OPA - Semester 1\Polis\obj\Debug\net7.0\ref\Polis.dll
+C:\Users\hampu\School\policeExercise\bin\Debug\net7.0\Polis.exe
+C:\Users\hampu\School\policeExercise\bin\Debug\net7.0\Polis.deps.json
+C:\Users\hampu\School\policeExercise\bin\Debug\net7.0\Polis.runtimeconfig.json
+C:\Users\hampu\School\policeExercise\bin\Debug\net7.0\Polis.dll
+C:\Users\hampu\School\policeExercise\bin\Debug\net7.0\Polis.pdb
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.AssemblyInfoInputs.cache
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.AssemblyInfo.cs
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.csproj.CoreCompileInputs.cache
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.dll
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\refint\Polis.dll
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.pdb
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\Polis.genruntimeconfig.cache
+C:\Users\hampu\School\policeExercise\obj\Debug\net7.0\ref\Polis.dll
