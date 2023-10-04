@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 
 class Program
 {
@@ -72,17 +73,43 @@ class Program
         crime.type = crimeType;
         crime.location = crimePlace;
         crime.time = crimeTime;
-        Console.WriteLine("Choose police to add to the police call");
-        foreach(Staff a in policeList) {
-            Console.Write("Name: " + a.getName());
-            Console.WriteLine("  PoliceID: " + a.getNumber());
+        int answer = 0;
+        Console.WriteLine("List of police: ");
+        PrintPolice();
+        while(true) {
+            Console.WriteLine("1. Choose police to add to the police call");
+            Console.WriteLine("2. Done");
+            try{
+                answer = int.Parse(Console.ReadLine());
+            } catch (Exception e){
+                Console.WriteLine("Please enter a number");
+            }
+            
+            if(answer == 1) {
+                Console.WriteLine("Enter the name of the police you want to add:");
+                string policeAdd = Console.ReadLine();
+                foreach (Staff a in policeList) {
+                    if(a.getName() == policeAdd){
+                        crime.AddPolice(a);
+                    }
+                }
+            }else if(answer == 2) {
+                break;
+            }else{
+                Console.WriteLine("Enter a valid number");
+            }
+            
+
+            Console.WriteLine("Debug: ");
+            crime.PrintPolice();
+            answer = 0;
         }
 
 
         
 
     }
-    public static void GetPolice() {
+    public static void PrintPolice() {
         foreach(Staff a in policeList) {
             Console.Write("Name: " + a.getName());
             Console.WriteLine("  PoliceID: " + a.getNumber());

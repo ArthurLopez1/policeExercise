@@ -5,9 +5,13 @@ class PoliceCall
     public int time;
     List<Staff> policeID = new List<Staff>();
 
-    public void addPoliceID(Staff staff)
+    public void AddPolice(Staff staff)
     {
         policeID.Add(staff);
     }
-
+    public void PrintPolice() {
+        foreach(Staff a in policeID) {
+            Console.WriteLine(a.getName());
+        }
+    }
 }
