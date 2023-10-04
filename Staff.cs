@@ -8,5 +8,11 @@ class Staff
         staffName = name;
         staffNumber = number;
     }
+    public string getName() {
+        return staffName;
+    }
+    public int getNumber() {
+        return staffNumber;
+    }
 
 }

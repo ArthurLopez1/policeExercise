@@ -2,7 +2,7 @@
 
 class Program
 {
-    static List<Staff> stationPolice = new List<Staff>();
+    static List<Staff> policeList = new List<Staff>();
 
     static List<PoliceCall> policeCalls = new List<PoliceCall>();
 
@@ -24,16 +24,17 @@ class Program
 
             switch(choice)
             {
-                case 3:
-                    PoliceRegister();
-                break;
-
+                
                 case 1:
                     PoliceCall();
                 break;
 
                 case 2:
                     
+                break;
+                
+                case 3:
+                    PoliceRegister();
                 break;
 
                 default:
@@ -54,7 +55,7 @@ class Program
 
         Staff staff = new Staff(policeName, policeNumer);
 
-        stationPolice.Add(staff);
+        policeList.Add(staff);
     }
 
     public static void PoliceCall()
@@ -71,9 +72,22 @@ class Program
         crime.type = crimeType;
         crime.location = crimePlace;
         crime.time = crimeTime;
+        Console.WriteLine("Choose police to add to the police call");
+        foreach(Staff a in policeList) {
+            Console.Write("Name: " + a.getName());
+            Console.WriteLine("  PoliceID: " + a.getNumber());
+        }
+
 
         
 
+    }
+    public static void GetPolice() {
+        foreach(Staff a in policeList) {
+            Console.Write("Name: " + a.getName());
+            Console.WriteLine("  PoliceID: " + a.getNumber());
+        }
+        return;
     }
 
     public static void Register()
@@ -82,39 +96,5 @@ class Program
     } 
 }
 
-class Staff
-{
-    int staffNumber;
-    string staffName;
 
-    public Staff (string name, int number) 
-    {
-        staffName = name;
-        staffNumber = number;
-    }
-
-}
-
-class Report
-{
-    public int rNumber;
-    int rDate;
-    string rStation;
-    string rDescription;
-
-}
-
-class PoliceCall
-{
-    public string type;
-    public string location;
-    public int time;
-    List<Staff> policeID = new List<Staff>();
-
-    public void addPoliceID(Staff staff)
-    {
-        policeID.Add(staff);
-    }
-
-}
 
