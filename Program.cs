@@ -70,7 +70,7 @@ class Program
         System.Console.WriteLine("Where did the crime occured: ");
         string crimePlace = Console.ReadLine();
         System.Console.WriteLine("When did the crime occured (hhmm): ");
-        int crimeTime = ReadInt();
+        int crimeTime = ExceptionHandler.ReadInt();
 
         PoliceCall crime = new PoliceCall();
         
@@ -86,7 +86,7 @@ class Program
             Console.WriteLine("1. Choose police to add to the police call");
             Console.WriteLine("2. Done");
             
-            answer = ReadInt();
+            answer = ExceptionHandler.ReadInt();
             
             if(answer == 1) {
                 Console.WriteLine("Enter the name of the police you want to add:");
