@@ -21,7 +21,7 @@ class Program
             System.Console.WriteLine("4. Exit");
 
             System.Console.WriteLine("Select option 1 - 4");
-            int choice = ReadInt();
+            int choice = ExceptionHandler.ReadInt();
 
             switch(choice)
             {
@@ -133,22 +133,7 @@ class Program
 
     
 
-    // Exception handling for readline ints
-    public static int ReadInt()
-    {
-        while(true)
-        {
-            try
-            {
-                int output = int.Parse(Console.ReadLine());
-                return output;
-            } 
-            catch (Exception)
-            {
-                Console.WriteLine("Please input valid integer");
-            }
-        }
-    }
+    
 }
 
 
