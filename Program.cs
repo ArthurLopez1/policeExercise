@@ -21,7 +21,7 @@ class Program
             System.Console.WriteLine("4. Exit");
 
             System.Console.WriteLine("Select option 1 - 4");
-            int choice = int.Parse(Console.ReadLine());
+            int choice = ReadInt();
 
             switch(choice)
             {
@@ -67,7 +67,7 @@ class Program
         System.Console.WriteLine("Where did the crime occured: ");
         string crimePlace = Console.ReadLine();
         System.Console.WriteLine("When did the crime occured (hhmm): ");
-        int crimeTime = int.Parse(Console.ReadLine());
+        int crimeTime = ReadInt();
 
         PoliceCall crime = new PoliceCall();
         
@@ -83,7 +83,7 @@ class Program
             Console.WriteLine("1. Choose police to add to the police call");
             Console.WriteLine("2. Done");
             try{
-                answer = int.Parse(Console.ReadLine());
+                answer = ReadInt();
             } catch (Exception e){
                 Console.WriteLine("Please enter a number");
             }
@@ -130,6 +130,23 @@ class Program
     {
         System.Console.WriteLine();
     } 
+
+    // Exception handling for readline ints
+    public static int ReadInt()
+    {
+        while(true)
+        {
+            try
+            {
+                int output = int.Parse(Console.ReadLine());
+                return output;
+            } 
+            catch (Exception)
+            {
+                Console.WriteLine("Please input valid integer");
+            }
+        }
+    }
 }
 
 
