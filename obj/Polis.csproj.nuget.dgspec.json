@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hampu\\School\\policeExercise\\Polis.csproj": {}
+    "C:\\School Code\\OPA23\\policeExercise\\Polis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hampu\\School\\policeExercise\\Polis.csproj": {
+    "C:\\School Code\\OPA23\\policeExercise\\Polis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hampu\\School\\policeExercise\\Polis.csproj",
+        "projectUniqueName": "C:\\School Code\\OPA23\\policeExercise\\Polis.csproj",
         "projectName": "Polis",
-        "projectPath": "C:\\Users\\hampu\\School\\policeExercise\\Polis.csproj",
+        "projectPath": "C:\\School Code\\OPA23\\policeExercise\\Polis.csproj",
         "packagesPath": "C:\\Users\\hampu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hampu\\School\\policeExercise\\obj\\",
+        "outputPath": "C:\\School Code\\OPA23\\policeExercise\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\hampu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

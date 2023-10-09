@@ -12,7 +12,7 @@ class Program
     public static void Main()
     {   
 
-        while(true)
+        while(true) // Main loop
         {
             System.Console.WriteLine("Welcome to Police OS");
             System.Console.WriteLine("1. Register a police call.");
@@ -26,19 +26,19 @@ class Program
             switch(choice)
             {
                 
-                case 1:
+                case 1: // Register a police call
                     PoliceCall();
                 break;
 
-                case 2:
+                case 2: // Calls 
                     
                 break;
                 
                 case 3:
-                    PoliceRegister();
+                    PoliceRegister(); // Calls PoliceRegister to register a new officer
                 break;
 
-                default:
+                default: // Input answer out of bounds
                     System.Console.WriteLine("Invalid Choice. Please select 1 - 4");
                 break;
             }
@@ -47,6 +47,7 @@ class Program
         }
     }
 
+    // Register a Police officer
     public static void PoliceRegister()
     {
         System.Console.WriteLine("Write a name: ");
@@ -76,7 +77,9 @@ class Program
         int answer = 0;
         Console.WriteLine("List of police: ");
         PrintPolice();
-        while(true) {
+        
+        while(true) // Loop to be able to keep adding new officers to the police call
+        {
             Console.WriteLine("1. Choose police to add to the police call");
             Console.WriteLine("2. Done");
             try{
@@ -88,14 +91,18 @@ class Program
             if(answer == 1) {
                 Console.WriteLine("Enter the name of the police you want to add:");
                 string policeAdd = Console.ReadLine();
-                foreach (Staff a in policeList) {
-                    if(a.getName() == policeAdd){
+                foreach (Staff a in policeList) // Search funcion for the list policeList
+                {
+                    if(a.getName() == policeAdd) // Adds adds the chosen police to the police report
+                    {
                         crime.AddPolice(a);
                     }
                 }
-            }else if(answer == 2) {
+            }else if(answer == 2) 
+            {
                 break;
-            }else{
+            }else // Answer out of bounds
+            {
                 Console.WriteLine("Enter a valid number");
             }
             
@@ -109,7 +116,8 @@ class Program
         
 
     }
-    public static void PrintPolice() {
+    public static void PrintPolice() // Prints out a list of all police officers to the user
+    {
         foreach(Staff a in policeList) {
             Console.Write("Name: " + a.getName());
             Console.WriteLine("  PoliceID: " + a.getNumber());
@@ -117,7 +125,8 @@ class Program
         return;
     }
 
-    public static void Register()
+    // Creates a report
+    public static void CreateReport()
     {
         System.Console.WriteLine();
     } 
