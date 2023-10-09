@@ -37,7 +37,10 @@ class Program
                 case 3:
                     PoliceRegister(); // Calls PoliceRegister to register a new officer
                 break;
-
+                
+                case 4: 
+                    Environment.Exit(0);
+                break;
                 default: // Input answer out of bounds
                     System.Console.WriteLine("Invalid Choice. Please select 1 - 4");
                 break;
@@ -74,7 +77,7 @@ class Program
         crime.type = crimeType;
         crime.location = crimePlace;
         crime.time = crimeTime;
-        int answer = 0;
+        int answer;
         Console.WriteLine("List of police: ");
         PrintPolice();
         
@@ -82,11 +85,8 @@ class Program
         {
             Console.WriteLine("1. Choose police to add to the police call");
             Console.WriteLine("2. Done");
-            try{
-                answer = ReadInt();
-            } catch (Exception e){
-                Console.WriteLine("Please enter a number");
-            }
+            
+            answer = ReadInt();
             
             if(answer == 1) {
                 Console.WriteLine("Enter the name of the police you want to add:");
@@ -116,6 +116,12 @@ class Program
         
 
     }
+
+    // Creates a report
+    public static void CreateReport()
+    {
+        System.Console.WriteLine();
+    } 
     public static void PrintPolice() // Prints out a list of all police officers to the user
     {
         foreach(Staff a in policeList) {
@@ -125,11 +131,7 @@ class Program
         return;
     }
 
-    // Creates a report
-    public static void CreateReport()
-    {
-        System.Console.WriteLine();
-    } 
+    
 
     // Exception handling for readline ints
     public static int ReadInt()
